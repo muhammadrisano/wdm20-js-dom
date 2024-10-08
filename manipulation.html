@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="title">helo world</h1>
+    <p class="content">saya ingin menjadi developer javascript</p>
+
+    <span class="content">saya ingin menjadi developer javascript</span>
+
+
+    <h4>javascript</h4>
+    <h4>HTML</h4>
+    <H4>CSS</H4>
+
+    <p id="text">belajar programming itu menyenangkan</p>
+
+    <a class="test" href="http://test.com">bahasa javascript</a>
+
+    <ul>
+        <li class="item">ngoding</li>
+        <li class="item">joging</li>
+        <li class="item">gaming</li>
+        <li class="item">reading</li>
+    </ul>
+    <a class="link">pindah ke google</a>
+
+    <div id="root">
+
+    </div>
+    <script>
+        // innerHTML
+        const elTitle = document.getElementById('title')
+
+        elTitle.innerHTML = "helo bro., <a href='https://google.com'> apakabar ?</a>"
+
+
+        // setAttribute
+        const elLink = document.querySelector('.link')
+        elLink.setAttribute('href', "https://google.com")
+        elLink.setAttribute('target', "_blank")
+        const elTest = document.querySelector('.test')
+        elTest.removeAttribute('href')
+
+
+
+        // manipulasi node
+
+        // createElement
+
+        const elPNew = document.createElement("p")
+
+        const elTextP = document.createTextNode("saya sedang belajar javacript DOM")
+        elPNew.appendChild(elTextP)
+
+        const elRoot = document.getElementById("root")
+        elRoot.appendChild(elPNew)
+    </script>
+
+</body>
+</html>
